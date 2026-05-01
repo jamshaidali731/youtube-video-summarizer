@@ -1,0 +1,74 @@
+name: yt_summary
+description: "AI-powered YouTube summarizer app"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🔥 Firebase (Backend)
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+
+  # 🌐 API Calling
+  http: ^1.2.0
+
+  # 🔊 Text-to-Speech
+  flutter_tts: ^4.2.5
+
+  # 🎨 UI & State Management
+  provider: ^6.1.2
+  google_fonts: ^8.0.2
+
+  # 🎬 Animations
+  lottie: ^3.1.0
+  share_plus: ^13.1.0
+  path_provider: ^2.1.2
+  image_picker: ^1.1.2
+
+  # 💾 Local Storage
+  shared_preferences: ^2.2.2
+
+  # 📅 Date & Time Formatting
+  intl: ^0.20.2
+
+  # 📱 Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # 🔥 APP ICON PACKAGE
+  flutter_launcher_icons: ^0.14.4
+
+# 🔥 ICON CONFIGURATION
+flutter_launcher_icons:
+  android: true
+  ios: false
+
+  # 👇 Tumhara icon path
+  image_path: "assets/logo/logo.png"
+
+  # 👇 Play Store adaptive icon
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/logo/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo/logo.png
+    - assets/animations/ai.json
+    - assets/animations/study.json
+    - assets/animations/time.json
+    - assets/animations/translate.json
+    - assets/animations/start.json
